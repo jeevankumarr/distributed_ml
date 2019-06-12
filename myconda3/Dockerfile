@@ -24,3 +24,5 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_6
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
+
+#

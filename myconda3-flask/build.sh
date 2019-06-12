@@ -4,7 +4,7 @@ echo 'Building Docker Image'
 docker build -t docker-flask:latest .
 echo 'Build Complete'
 
-if [ $1 == 'deploy' ]; then
+if [[ $1 == 'deploy' ]]; then
     echo 'Deploying Image and Starting Service'
     kubectl delete deployments,pod,service flask-dep
     kubectl create -f docker-flask-deployment.yml

@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: jeevs-flask-name
+  labels:
+    name: jeevs-flask-label-name
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jeevs-flask-spec
+    spec:
+      containers:
+      - name: private-reg-container
+        image: conda-flask:latest
+        ports:
+        - containerPort: 5000

@@ -12,6 +12,6 @@ spec:
         app: flask-dep
     spec:
       containers:
-      - name: docker-flask-con
-        image: docker-flask:latest
+      - name: conda-flask-con
+        image: conda-flask:latest
         imagePullPolicy: Never

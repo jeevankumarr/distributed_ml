@@ -1,4 +1,4 @@
-FROM docker-mconda:latest
+FROM jeevankrr/myconda3:latest
 
 USER mluser
 
